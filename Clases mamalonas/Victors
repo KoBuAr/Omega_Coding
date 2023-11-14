@@ -1,0 +1,101 @@
+#include <bits/stdc++.h>
+using namespace std;
+// Aun no jala el codigo
+int main()
+{
+    // PRESENTACION MAMALONA EN ONLINE GDB SOBRE VECTORES //
+    
+    int opcion;
+    cin >> opcion;
+    
+        cout << "1. Leer y imprimir con indice asignado" << "\n";
+        cout << "2. Leer y imprimir sin indice asignado" << "\n";
+        cout << "3. Leer y imprimir con indice asignado" << "\n";
+        cout << "4. Leer y imprimir con indice asignado" << "\n";
+        cout << "5. Leer y imprimir con indice asignado" << "\n";
+        cout << "6. Pus pa salir" << "\n";
+    
+    while (opcion != 6){
+        
+    switch(opcion){
+    
+    case 1: cout << "Leer e imprimir un vector con un indice asignado: \n";
+    
+    // Declaracion: vector <tipo de dato> nombre (cantidad de datos);
+    
+    cout << "Ingresa el tamaño del indice: \n";
+    
+    int n;
+    cin >> n;
+    
+    vector <int> victor(n);
+    
+    /*  Si tiene determinado una cantidad de indices se puede asignar los valores
+    directamente del vector como un areglo tipo c  dentro de un for, ejemplo: */
+    
+    cout << "Ahora los datos: \n";
+    
+    for (int i = 0; i < n; i++){
+        cin >> victor[i];
+    }
+    
+    /* Para imprimir cada dato del arreglo es el mismo proceso
+    pero hay que cambiar el cin por un cout */
+    
+    for (int i = 0; i < n; i++){
+        cout << victor[i] << " ";
+    }
+    
+    cout << "\n";
+    break;
+    
+    case 2: cout << "Leer e imprimir un vector sin un indice asignado: \n";
+    
+    // Declaracion: vector <tipo de dato> nombre;
+    
+    cout << "Ingresa el tamaño del vector: \n";
+    
+    int a;
+    cin >> a;
+    
+    vector <int> victorjr;
+    
+    /* Esta parte del codigo de igual forma lee e imprime el vector pero si 
+    no hay un indice determinado necesitas de un auxiliar para ingresar.
+    
+    El auxiliar se podria tomar como los datos que se guardaran en el vector y 
+    tiene que ir de a huevo en un for */
+    
+    cout << "Ingresa los datos: \n";
+    
+    for (int i = 0; i < a; i++){
+        int aux;
+        cin >> aux;
+        
+        victorjr.push_back(aux);
+    }
+    
+    for (int i = 0; i < a; i++){
+        cout << victorjr[i] << " ";
+    }
+    
+    cout << "\n";
+    break;
+    
+    case 3 : cout << "Borrar datos: \n";
+    
+    /* Esta parte del codigo borra una posicion en especifica del vector */
+    
+    victorjr.erase(victorjr.begin() + 1);
+    
+    for (int i = 0; i < victorjr.size(); i++){
+        cout << victorjr[i] << " ";
+    }
+    break;
+    
+    case 4 : cout << "Buscar datos en el vector: " << "\n";
+    break;
+    }
+}
+    return 0;
+}
