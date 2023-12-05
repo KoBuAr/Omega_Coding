@@ -1,0 +1,56 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int contaderes(vector <string> & victor, int p){
+    
+    
+    for (int i = 0; i < n; ++i){
+    string j = victor[i];
+    
+    j = j.substr(j.lenght()-p, p);
+    
+    string k = victor[i + 1];
+    
+    k = k.substr(k.lenght()-p, p);
+    
+    if (j != k) return 0;
+    }
+    
+    return 1;
+}
+
+
+int main()
+{
+    
+    int n, lomas = 0, calles = 0, fracc = 0; 
+    cin >> n;
+    
+    vector <string> victor;
+    
+    for (int i = 0; i <= n; ++i){
+        string s;
+        getline(cin,s);
+        
+        victor.push_back(s);
+    }
+    
+    for (int i  = 0; i <= n; ++i){
+        if (victor[i][0] == 'L' || victor[i][0] == 'l') lomas++;
+        else if (victor[i][0] == 'C' || victor[i][0] == 'c') calles++;
+        else if (victor[i][0] == 'F' || victor[i][0] == 'f') fracc++;
+    }
+    
+    int c1 = 0, c2 = 0, c3 = 0;
+    
+    c1 = contaderes(victor, 3);
+    c2 = contaderes(victor, 2);
+    c3 = contaderes(victor, 1);
+    
+    int sum = c1 + c2 + c3;
+    
+    cout << sum;
+    
+    return 0;
+}
