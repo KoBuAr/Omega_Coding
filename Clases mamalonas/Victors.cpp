@@ -1,25 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
-// Aun no jala el codigo
+
 int main()
 {
-    // PRESENTACION MAMALONA EN ONLINE GDB SOBRE VECTORES //
+    // PRESENTACION MAMALONA SOBRE VECTORES //
     
-    int opcion;
-    cin >> opcion;
-    
-        cout << "1. Leer y imprimir con indice asignado" << "\n";
-        cout << "2. Leer y imprimir sin indice asignado" << "\n";
-        cout << "3. Leer y imprimir con indice asignado" << "\n";
-        cout << "4. Leer y imprimir con indice asignado" << "\n";
-        cout << "5. Leer y imprimir con indice asignado" << "\n";
-        cout << "6. Pus pa salir" << "\n";
-    
-    while (opcion != 6){
-        
-    switch(opcion){
-    
-    case 1: cout << "Leer e imprimir un vector con un indice asignado: \n";
+    cout << "Leer e imprimir un vector con un indice asignado: \n";
     
     // Declaracion: vector <tipo de dato> nombre (cantidad de datos);
     
@@ -47,9 +33,8 @@ int main()
     }
     
     cout << "\n";
-    break;
     
-    case 2: cout << "Leer e imprimir un vector sin un indice asignado: \n";
+    cout << "Leer e imprimir un vector sin un indice asignado: \n";
     
     // Declaracion: vector <tipo de dato> nombre;
     
@@ -80,22 +65,36 @@ int main()
     }
     
     cout << "\n";
-    break;
     
-    case 3 : cout << "Borrar datos: \n";
+    cout << "Borrar datos: \n";
+    
+    cout << "Ingresa la posicion que quieres borrar: " << "\n";
+    
+    int y;
+    cin >> y;
     
     /* Esta parte del codigo borra una posicion en especifica del vector */
     
-    victorjr.erase(victorjr.begin() + 1);
+    victorjr.erase(victorjr.begin() + y);
     
     for (int i = 0; i < victorjr.size(); i++){
-        cout << victorjr[i] << " ";
+        cout << victorjr[i] << "\n";
     }
-    break;
     
-    case 4 : cout << "Buscar datos en el vector: " << "\n";
-    break;
+    cout << "Buscar datos en el vector: " << "\n";
+    
+    // Declara lo que vas a buscar
+
+    int o;
+    cin >> o;
+
+    if(find(victorjr.begin(), victorjr.end(), o) != victorjr.end()){
+        cout << "Encontrado"; 
     }
-}
+    else if (find(victorjr.begin(), victorjr.end(), o) == victorjr.end()){
+        cout << "No se encontro";
+    }
+    
+
     return 0;
 }
