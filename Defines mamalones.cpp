@@ -6,7 +6,7 @@ using namespace std;
 #define nl cout<<"\n"
 #define sp(x,n) fixed<<setprecision(x) << n
 #define all(x) x.begin(),x.end()
-#define fore(i,l,r) for(auto i=l;i<r;i++)
+#define fore(i,l,r) for(auto i=l;i<r;++i)
 #define pb push_back
 #define pf push_front
 
