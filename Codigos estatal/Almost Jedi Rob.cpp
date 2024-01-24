@@ -41,10 +41,8 @@ int main(){
         else if (a == "DELETE") {
             int l, r;
             cin >> l >> r;
-
             
               victor.erase(victor.begin() + l-1, victor.begin() + r);
-    
             }
         
         else if (a == "INSERT") {
