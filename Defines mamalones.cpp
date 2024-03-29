@@ -1,6 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-using lvector <long long>;
 
 #define ull unsigned long long
 #define ll long long
