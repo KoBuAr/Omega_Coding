@@ -1,4 +1,4 @@
-struct amikos{
+struct DSU{
     vector<int> pr, frds;
     int groups;
     
