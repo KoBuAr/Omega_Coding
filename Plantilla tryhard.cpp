@@ -1,3 +1,4 @@
+//TEH NOOB KOBUAR
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -18,6 +19,7 @@ const int N = 1e5 + 1;
 
 using vi = vector<int>;
 using vs = vector<string>;
+using vc = vector<char>;
 using vll = vector<ll>;
 using vii = vector<pair<int, int>>;
 using ii = pair<int, int>;
