@@ -4,7 +4,6 @@ using namespace std;
 
 #define ull unsigned long long
 #define ll long long
-#define csp cout << " ";
 #define cnl cout << "\n"
 #define nl "\n"
 #define sp(x,n) fixed << setprecision(x) << n
@@ -15,11 +14,7 @@ using namespace std;
 #define pb push_back
 #define pf push_front
 
-const int N = 1e5 + 1;
-
 using vi = vector<int>;
-using vs = vector<string>;
-using vc = vector<char>;
 using vll = vector<ll>;
 using vii = vector<pair<int, int>>;
 using ii = pair<int, int>;
