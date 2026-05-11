@@ -28,7 +28,7 @@ public class j1 {
         } catch (BreakException e) {
             // break detectado, salimos limpiamente
         }
-    }
+    }//
 
     // ── Sobrecarga simple (sin break/continue, más limpia para casos simples) ─
     public static void fore(int inicio, int fin, IntConsumer accion) {
